@@ -3,9 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;700&display=swap" rel="stylesheet">
+    <title>WDD131 - Dynamic Web Fundamentals - Jahmay Gill</title>
+    <meta name="description" content="WDD131 - Dynamic Web Fundamentals, Home page">
+    <meta name="author" content="Jahmay Gill">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-    
+    <header>
+        <h1>WDD131: Dynamic Web Fundamentals - Jahmay Gill</h1>
+        <nav class="navigation">
+            <a href="https://www.linkedin.com/in/jahmay-gill">LinkedIn</a>
+            <a href="https://byupw.instructure.com/">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/6?lang=eng&id=p36#p36">Scripture</a>
+            <a href="#">Final Project</a>
+        </nav>
+    </header>
+    <main>
+        <section class="card">
+            <h2>About Me</h2>
+            <div class="about-me">
+                <p>Hi! I'm Jahmay - a student and mother, born and raised in the beautiful tropical country called Suriname.
+                    I am currently studying software development, and it's quite interesting as well as challenging.
+                    In my day to day life I'm a home-maker and advocate for human rights. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, vitae reprehenderit. Ipsum iure asperiores porro cumque blanditiis maiores nesciunt voluptatum necessitatibus, corrupti facilis accusamus quaerat impedit perspiciatis eius maxime possimus?
+                </p>
+                <img src="profile.jpg" alt="Jahmay's photo" class="card-image" width="200">
+            </div>
+            <h3>Paramaribo, Suriname</h3>
+            <div class="suriname">
+                <p>Suriname is the number one forested country in the world, with it's diverse culture and people. 
+                    It is the smallest independent country in South America, and the only nation
+                    with Dutch as it's official language in that region. While it may not be the most known country, it is home and definitly the place to be during december. 
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas ipsum nostrum, natus dolore impedit ducimus quaerat voluptatem, ab ea modi non deleniti exercitationem inventore? Natus repellendus quae at quaerat reiciendis?
+                </p>
+                <img src="suriname-flag.jpg" alt="Official Flag of Suriname" class="card-image" width="200">
+            </div>
+        </section>
+        <section class="card">
+            <h2>Web Dev Resources</h2>
+                <ul>
+                    <li><a href="#">W3 Schools</a></li>
+                    <li><a href="#">Placeholder</a></li>
+                    <li><a href="#">Placeholder 2</a></li>
+                    <li><a href="#">Placeholder 3</a></li>
+                </ul>
+        </section>
+    </main>
+    <footer>
+        <p>©;<span id="currentYear"></span> Jahmay Gill | Suriname</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
 </body>
 </html>
