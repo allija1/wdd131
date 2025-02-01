@@ -1,0 +1,40 @@
+@media screen and (min-width: 786px) {
+    nav {
+        display: flex;
+        justify-content: space-around;
+        background-color: #003366;
+        gap: 15px;
+        margin-top: 10px;
+    }
+
+    nav a {
+        display: block;
+        color: #fff;
+        text-align: center;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 5px 10px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    
+    }
+
+    nav a:hover {
+        background-color: #fff;
+        color: #003366;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 1rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+}
