@@ -20,40 +20,58 @@ h1 {
 
 nav {
     display: flex;
-    list-style: none;
     flex-direction: column;
     background-color: #003366;
+    padding: 10px;
 
 }
 
-nav a {
+.nav-menu {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+}
+
+.nav-menu li {
+    width: 100%;
+    text-align: center;
+}
+
+.nav-menu li a {
     display: block;
-	color: #fff;
-	text-align: end;
-	padding: 1rem;
-	text-decoration: none;
-	font-size: larger;
+    color: #fff;
+    padding: 1rem;
+    text-decoration: none;
+    font-size: larger;
     transition: background-color 0.3s ease, color 0.3s ease;
-
 }
 
-nav a:hover {
+.nav-menu li a:hover {
     background-color: #fff;
     color: #003366;
     text-decoration: underline double;
 }
 
-.active {
-    color: greenyellow;
+/* Hamburger menu */
+.hamburger {
+    display: block;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    margin: 10px auto;
 }
 
 main {
     display: grid;
-    /*grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));*/
+    /*grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));*/
     grid-template-columns: 1fr;
-    gap: 25px;
+    gap: 20px;
     place-items: center;
-    width: 80%;
+    width: 90%;
     max-width: 1200px;
     margin: 0 auto;
     background-color: #fff;
@@ -63,23 +81,15 @@ main {
 
 h2 {
     text-align: center;
-    background-color: #fff;
     color: #003366;
     padding: 15px;
     margin: 0;
 }
 
-footer {
-    background-color: #003366;
-    color: #fff;
-    text-align: center;
-    padding: 1em 0;
-    margin-top: 20px;
-}
-
 figure {
     background-color: #fff;
     padding: 10px;
+    text-align: center;
 }
 
 figure img {
@@ -92,26 +102,13 @@ figure img {
 
 figcaption {
     font-size: smaller;
+    color: #333;
 }
 
-.hamburger {
-    display: none;
-    font-size: 24px;
-    background: none;
-    border: none;
+footer {
+    background-color: #003366;
     color: #fff;
-    cursor: pointer;
-}
-
-.nav-menu {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    margin: 0;
-    padding: 0;
-}
-
-.nav-menu li a a {
-    color: #fff;
-    text-decoration: none;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 20px;
 }
